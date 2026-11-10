@@ -24,13 +24,14 @@ changeBtn.addEventListener("click", () => {
 // Task 5
 
 input.addEventListener("input", () => {
-  output.textContent = `Hello, ${input.value}`;
+  output.textContent = `Hello, ${input.value}!`;
 });
 
 // Task 6
 
 document.getElementById("addTaskBtn").addEventListener("click", () => {
   const newListItem = document.createElement("li");
+  newListItem.textContent = "New task";
   taskList.appendChild(newListItem);
 });
 
